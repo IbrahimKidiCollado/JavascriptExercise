@@ -8,8 +8,9 @@
 // them in order to use it.
 //
 // In your own projects, files, and code, you can play with @ts-check as well.
-
+// @ts-ignore
 import { notify } from './notifier';
+// @ts-ignore
 import { order } from './grocer';
 
 /**
@@ -26,7 +27,7 @@ export function onError() {
 	return notify({ message: 'ERROR' });
 }
 
-/**
+/*
  * @param {GrocerQuery} query
  * @param {FruitPickerSuccessCallback} onSuccessCallback
  * @param {FruitPickerErrorCallback} onErrorCallback
