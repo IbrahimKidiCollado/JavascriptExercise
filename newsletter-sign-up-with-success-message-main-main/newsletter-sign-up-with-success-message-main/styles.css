@@ -1,0 +1,149 @@
+body {
+    background-color: hsl(234, 29%, 20%);
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 100vh;
+    justify-items: center;
+    align-items: center;
+}
+
+/* PRIMERA PANTALLA */
+
+.containerPrincipal {
+    display: flex;
+    flex-direction: row;
+    width: 930px;
+    height: 635px;
+    border-radius: 30px;
+    background-color: white;
+}
+
+.parteIzquierda {
+    width: 400px;
+    padding: 50px 0px 50px 50px;
+    overflow: hidden;
+    position: relative;
+}
+
+@media (max-width: 375px) {
+    .parteIzquierda{
+        width: 375px;
+        padding: 0px 20px 10px 80px;
+    }
+
+    .containerPrincipal {
+        width: 100%;
+        height: 100%;
+        flex-direction: column-reverse;
+        margin: 0px;
+        align-items: center;
+    }
+
+    .imagen1 {
+        width: fit-content;
+        height: 100%;
+    }
+}
+
+
+
+.titulo {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 62px;
+    margin-bottom: 20px;
+    color: hsl(234, 29%, 20%);
+}
+
+.parteIzquierda p {
+    margin-bottom: 30px;
+}
+
+.lista {
+    display: flex;
+    margin-bottom: 15px;
+    align-items: center;
+    gap: 15px;
+}
+
+.listaUltimo {
+    margin-bottom: 55px;
+}
+
+.label1 {
+    font-size: 12px;
+    color: hsl(234, 29%, 20%);
+    font-weight: 700;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.fallo {
+    font-size: 12px;
+    color: #e77260;
+    font-weight: 700;
+    margin-bottom: 10px;
+    position: absolute;
+    left: 323px;
+    bottom: 179px;
+    display: none;
+}
+
+.inputTexto {
+    display: block;
+    width: 92%;
+    margin-bottom: 20px;
+    padding: 15px 0px 15px 20px;
+    border: solid 1px hsl(231, 7%, 60%);
+    border-radius: 8px;
+    color: black;
+    background-color: white;
+    outline: auto;
+}
+
+.inputBoton {
+    width: 97.7%;
+    padding: 20px 0px 20px;
+    background-color: hsl(234, 29%, 20%);
+    color: white;
+    font-weight: 700;
+    border: 0px;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.inputBoton:hover {
+    background-image: linear-gradient(to right, #FF758C, #e97c00);
+}
+
+.parteDerecha {
+    width: 400px;
+    padding: 20px 0px 20px 50px;
+}
+
+/* SEGUNDA PANTALLA */
+
+.containerSecundario {
+    width: 500px;
+    height: 470px;
+    border-radius: 30px;
+    display: none;
+    background-color: white;
+    left: 33.3%;
+    bottom: 500px;
+}
+
+.unicaParte {
+    padding: 40px 50px 25px 50px;
+    overflow: hidden;
+}
+
+.imagen2 {
+    margin-bottom: -15px;
+}
+
